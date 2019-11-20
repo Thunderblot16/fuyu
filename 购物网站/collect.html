@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>publish我的收藏</title>
+<!--自己的样式-->
+<link href="css/backstage.css" rel="stylesheet" type="text/css">
+<!-- Bootstrap -->
+<!--fileinput 样式-->
+<link href="css/fileinput.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!--动画CSS插件-->
+<link href="css/animate.min.css" rel="stylesheet" type="text/css">
+   <script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/fileinput.js"></script>
+<script src="js/zh.js"></script>
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header class="wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;"> <img class="img-circle logo" alt="logo" src="images/logo.png">
+  <div class="desc">校园二手交易系统</div>
+</header>
+<!-- /.container-fluid -->
+
+<div class="container-fluid">
+  <div class="row ">
+  <!--data-toggle collapse 折叠  ul class =collapse 初始折叠 -->
+    <div class="col-md-2 wow slideInDown" id="left" style="visibility: visible; animation-name: slideInDown;"> <a href="#systemSetting" data-toggle="collapse"> <i class="glyphicon glyphicon-cog"></i>后台管理 <span class="pull-right glyphicon glyphicon-chevron-down"></span><br> </a> 
+      <!--ul id  和 上面a 标签的id对应 所以能够弹出li -->
+      <ul class="nav nav-pills nav-stacked collapse " id="systemSetting">
+        <li><a href="#"><i class="glyphicon glyphicon-user"></i>用户管理</a></li>
+        <li><a href="#"><i class="glyphicon glyphicon-home"></i>地址管理</a></li>
+        <li><a href="#"><i class="glyphicon glyphicon-globe"></i>商品管理</a></li>
+        <li><a href="#"><i class="glyphicon glyphicon-edit"></i>图片管理</a></li>
+        <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>日志管理</a></li>
+      </ul>
+    <br>
+     <!--data-toggle collapse 折叠   collapse in 初始不折叠-->
+        <div> <a href="#userSetting" data-toggle="collapse"> 
+        <i class="glyphicon glyphicon-fire"></i> 买家中心<span class="pull-right glyphicon glyphicon-chevron-down"></span> </a> 
+      <ul class="nav nav-pills nav-stacked collapse in " id="userSetting">
+        <li> <a class="ex0 active" href="shopping cart.html"> <i class="glyphicon glyphicon-inbox"></i> 我的购物车</a> </li>
+           <li> <a href="bought.html"> <i class="glyphicon glyphicon-gift"></i> 已买到的商品</a> </li>
+        <li class="active"> <a class="ex0 active" href="#publish"> <i class="glyphicon glyphicon-pencil"></i> 我的收藏</a> </li>
+           <li> <a href="persanal information.html"> <i class="glyphicon glyphicon-user"></i> 个人资料</a> </li>
+
+      </ul>
+    </div>
+      <br>
+    <!--data-toggle collapse 折叠   collapse in 初始不折叠-->
+        <div> <a href="#sellSetting" data-toggle="collapse"> <i class="glyphicon glyphicon-asterisk"></i> 卖家中心<span class="pull-right glyphicon glyphicon-chevron-down"></span> </a> 
+      <ul class="nav nav-pills nav-stacked collapse in " id="sellSetting">
+        <li> <a href="publish.html"> <i class="glyphicon glyphicon-gift"></i> 发布商品 </a> </li>
+           <li> <a href="#"> <i class="glyphicon glyphicon-barcode"></i> 出售中的商品</a> </li>
+        <li> <a href="#"> <i class="glyphicon glyphicon-euro"></i> 卖家设置</a> </li>
+
+      </ul>
+    </div>
+      
+  </div>
+ 
+    
+    <!-- 显示表格数据 -->
+    <div class="container">
+                    <div id="models-list">
+                        <div class="list-wrap clearfix">
+                            <a class="car-item" href="###">
+                                <div class="car-photo">
+                                    <img class="lazy" alt="MG锐行??2016款??1.5L 自动超值豪华版" src="https://image.guazistatic.com/gz01171025/01/44/5a8e3bb00e44f1c3a417c50d17578a6d.jpg@base@tag=imgScale&amp;w=428&amp;h=275&amp;q=88" data-original="https://image.guazistatic.com/gz01171025/01/44/5a8e3bb00e44f1c3a417c50d17578a6d.jpg@base@tag=imgScale&amp;w=428&amp;h=275&amp;q=88">
+                                </div>
+                                <div class="car-detail">
+                                    <h2 class="car-info">
+                                        <span class="info">
+                                            MG锐行&nbsp;&nbsp;2016款&nbsp;&nbsp;1.5L 自动超值豪华版 </span>
+                                    </h2>
+                                    <div class="car-price">
+                                        <p class="pre-price">
+                                            价格&nbsp;<em class="hot">
+                                                123456</em>
+                                            &nbsp;元</p>
+                                        <p class="for-month">
+                                            月售 1234</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="gz-pagination">
+                            <div class="wrap">
+                                <a class="page-num prePage n" href="###">
+                                </a>
+                                <a class="page-num active" href="###">
+                                    1</a>
+                                <a class="page-num" href="###">
+                                    2</a>
+                                <a class="page-num" href="###">
+                                    3</a>
+                                <a class="page-num" href="###">
+                                    4</a>
+                                <a class="page-num" href="###">
+                                    5</a>
+                                <a class="page-num nextPage" href="###">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" value="1" data-input-t="page">
+    <input type="hidden" value="15" data-input-t="size">
+    <input type="hidden" value="74" data-input-t="total">
+    <script src="js/common.2e81c856.js">
+    </script>
+    <script src="js/allmodels.blade.c4ca0f15.js">
+    </script>
+    <iframe src="cross.html" style="display: none">
+    </iframe>
+	
+	
+	
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="js/wow.min.js"></script>
+<script>
+$(function(){
+
+new WOW().init();
+})
+</script>
+<script>
+$("#file_upload").fileinput({
+
+                language: 'zh', //设置语言
+
+                uploadUrl:"http://127.0.0.1/", //上传的地址
+
+               allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
+
+               //uploadExtraData:{"id": 1, "fileName":'123.mp3'},
+
+                uploadAsync: true, //默认异步上传
+
+                showUpload:true, //是否显示上传按钮
+
+                showRemove :true, //显示移除按钮
+
+                showPreview :true, //是否显示预览
+
+                showCaption:true,//是否显示标题
+
+                browseClass:"btn btn-primary", //按钮样式    
+
+               dropZoneEnabled: true,//是否显示拖拽区域
+
+               //minImageWidth: 50, //图片的最小宽度
+
+               //minImageHeight: 50,//图片的最小高度
+
+               //maxImageWidth: 1000,//图片的最大宽度
+
+               //maxImageHeight: 1000,//图片的最大高度
+
+                //maxFileSize:0,//单位为kb，如果为0表示不限制文件大小
+
+               //minFileCount: 0,
+
+                maxFileCount:10, //表示允许同时上传的最大文件个数
+
+                enctype:'multipart/form-data',
+
+               validateInitialCount:true,
+
+                previewFileIcon: "<iclass='glyphicon glyphicon-king'></i>",
+
+               msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+
+           }).on("fileuploaded", function (event, data, previewId, index){
+ //上传图片后的回调函数，可以在这做一些处理
+                 
+
+});
+</script><div tabindex="-1" class="file-zoom-dialog modal fade" id="kvFileinputModal" aria-labelledby="kvFileinputModalLabel"><div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">详细预览</h5>
+      <span class="kv-zoom-title"></span>
+      <div class="kv-zoom-actions"><button title="缩放" class="btn btn-sm btn-kv btn-default btn-outline-secondary btn-toggleheader" aria-pressed="false" type="button" data-toggle="button" autocomplete="off"><i class="glyphicon glyphicon-resize-vertical"></i></button><button title="全屏" class="btn btn-sm btn-kv btn-default btn-outline-secondary btn-fullscreen" aria-pressed="false" type="button" data-toggle="button" autocomplete="off"><i class="glyphicon glyphicon-fullscreen"></i></button><button title="无边界模式" class="btn btn-sm btn-kv btn-default btn-outline-secondary btn-borderless" aria-pressed="false" type="button" data-toggle="button" autocomplete="off"><i class="glyphicon glyphicon-resize-full"></i></button><button title="关闭当前预览" class="btn btn-sm btn-kv btn-default btn-outline-secondary btn-close" aria-hidden="true" type="button" data-dismiss="modal"><i class="glyphicon glyphicon-remove"></i></button></div>
+    </div>
+    <div class="modal-body">
+      <div class="floating-buttons"></div>
+      <div class="kv-zoom-body file-zoom-content krajee-default"></div>
+<button title="预览上一个文件" class="btn btn-navigate btn-prev" type="button"><i class="glyphicon glyphicon-triangle-left"></i></button> <button title="预览下一个文件" class="btn btn-navigate btn-next" type="button"><i class="glyphicon glyphicon-triangle-right"></i></button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+</body></html>

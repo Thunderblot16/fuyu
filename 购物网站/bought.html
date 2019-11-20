@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>已买到的商品</title>
+<!--自己的样式-->
+<link rel="stylesheet" type="text/css" href="css/backstage.css">
+<!-- Bootstrap -->
+<!--fileinput 样式-->
+<link rel="stylesheet" type="text/css" href="css/fileinput.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!--动画CSS插件-->
+<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+   <script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/fileinput.js"></script>
+<script src="js/zh.js"></script>
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<style>
+	*{
+		margin:0; padding 0;
+	}
+	.table-c table{
+		border: 1px solid #428BCA;
+	}
+	.table-c table td{
+		border: 1px solid #428BCA;
+	}
+</style>
+<body>
+<header class="wow fadeInRight"> <img src="images/logo.png" class="img-circle logo"
+		alt="logo" />
+  <div class="desc">校园二手交易系统</div>
+</header>
+<!-- /.container-fluid -->
+
+<div class="container-fluid">
+  <div class="row">
+  <!--data-toggle collapse 折叠  ul class =collapse 初始折叠 -->
+    <div class="col-md-2 wow slideInDown" id="left"> <a href="#systemSetting"  data-toggle="collapse"> <i class="glyphicon glyphicon-cog"></i>后台管理 <span class="pull-right glyphicon glyphicon-chevron-down"></span><br/> </a> 
+      <!--ul id  和 上面a 标签的id对应 所以能够弹出li -->
+      <ul id="systemSetting" class="nav nav-pills nav-stacked collapse ">
+        <li><a href="#"><i class="glyphicon glyphicon-user"></i>用户管理</a></li>
+        <li><a href="#"><i class="glyphicon glyphicon-home"></i>地址管理</a></li>
+        <li><a href="#"><i class="glyphicon glyphicon-globe"></i>商品管理</a></li>
+        <li><a href="#"><i class="glyphicon glyphicon-edit"></i>图片管理</a></li>
+        <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>日志管理</a></li>
+      </ul>
+    </br>
+     <!--data-toggle collapse 折叠   collapse in 初始不折叠-->
+    <div>
+		<a href="#userSetting"  data-toggle="collapse"> 
+		<i class="glyphicon glyphicon-fire"></i> 买家中心<span class="pull-right glyphicon glyphicon-chevron-down"></span> </a> 
+		<ul class="nav nav-pills nav-stacked collapse in " id="userSetting">
+			<li> <a href="shopping cart.html" class="ex0 active"> <i class="glyphicon glyphicon-inbox"></i> 我的购物车</a> </li>
+			<li class="active"> <a href="#publish" class="ex0 active"> <i class="glyphicon glyphicon-gift"></i> 已买到的商品</a> </li>
+			<li> <a href="collect.html"> <i class="glyphicon glyphicon-heart"></i> 我的收藏</a> </li>
+			<li> <a href="persanal information.html"> <i class="glyphicon glyphicon-user"></i> 个人资料</a> </li>
+		</ul>
+    </div>
+     </br>
+    <!--data-toggle collapse 折叠   collapse in 初始不折叠-->
+    <div> 
+		<a href="#sellSetting"  data-toggle="collapse"> <i class="glyphicon glyphicon-asterisk"></i> 卖家中心<span class="pull-right glyphicon glyphicon-chevron-down"></span> </a> 
+		<ul class="nav nav-pills nav-stacked collapse in " id="sellSetting">
+			<li> <a href="publish.html"> <i class="glyphicon glyphicon-pencil"></i> 发布商品 </a> </li>
+			<li> <a href="#"> <i class="glyphicon glyphicon-barcode"></i> 出售中的商品</a> </li>
+			<li> <a href="#"> <i class="glyphicon glyphicon-euro"></i> 卖家设置</a> </li>
+		</ul>
+    </div>
+      
+  </div>
+ 
+    
+    <!-- 显示表格数据 -->
+	</br>
+	</br>
+	<div class="table-c">
+		<table cellspacing = "0">
+			<colgroup span="7">
+				<tr style="height: 40px; background: #F5F5F5;">
+					<td colspan="7" align="right">
+						订单号:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+						<a href="">
+							<img src="img/客服.png" style="width: 20px;height: 20px;">
+						</a>
+						和我联系&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					</td>
+				</tr>
+				<tr style="height: 120px;">
+					<td style="width: 150px"></td>
+					<td style="width: 250px"></td>
+					<td style="width: 100px" align="center">
+						数量：1
+					</td>
+					<td style="width: 150px;" align="center" >
+						<p><a href="">申请售后</a></p>
+						<p><a href="">投诉卖家</a></p>
+					</td>
+					<td style="width: 150px" align="center">
+						<p><b>￥</b></p>
+						<p>(含运费：￥)</p>
+					</td>
+					<td style="width: 150px" align="center">
+						<p>交易成功</p>
+						<p><a href="">订单详情</a></p>
+					</td>
+					<td style="width: 150px" align="center">
+						<input type="button" value="评价"> 
+					</td>
+				</tr>
+			</colgroup>
+		</table>
+		</br>
+		<table cellspacing = "0">
+			<colgroup span="7">
+				<tr style="height: 40px; background: #F5F5F5;">
+					<td colspan="7" align="right">
+						订单号:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+						<a href="">
+							<img src="img/客服.png" style="width: 20px;height: 20px;">
+						</a>
+						和我联系&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					</td>
+				</tr>
+				<tr style="height: 120px;">
+					<td style="width: 150px"></td>
+					<td style="width: 250px"></td>
+					<td style="width: 100px" align="center">
+						数量：1
+					</td>
+					<td style="width: 150px;" align="center" >
+						<p><a href="">申请售后</a></p>
+						<p><a href="">投诉卖家</a></p>
+					</td>
+					<td style="width: 150px" align="center">
+						<p><b>￥</b></p>
+						<p>(含运费：￥)</p>
+					</td>
+					<td style="width: 150px" align="center">
+						<p>交易成功</p>
+						<p><a href="">订单详情</a></p>
+					</td>
+					<td style="width: 150px" align="center">
+						<input type="button" value="评价"> 
+					</td>
+				</tr>
+			</colgroup>
+		</table>
+		</br>
+		<table cellspacing = "0">
+			<colgroup span="7">
+				<tr style="height: 40px; background: #F5F5F5;">
+					<td colspan="7" align="right">
+						订单号:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+						<a href="">
+							<img src="img/客服.png" style="width: 20px;height: 20px;">
+						</a>
+						和我联系&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					</td>
+				</tr>
+				<tr style="height: 120px;">
+					<td style="width: 150px"></td>
+					<td style="width: 250px"></td>
+					<td style="width: 100px" align="center">
+						数量：1
+					</td>
+					<td style="width: 150px;" align="center" >
+						<p><a href="">申请售后</a></p>
+						<p><a href="">投诉卖家</a></p>
+					</td>
+					<td style="width: 150px" align="center">
+						<p><b>￥</b></p>
+						<p>(含运费：￥)</p>
+					</td>
+					<td style="width: 150px" align="center">
+						<p>交易成功</p>
+						<p><a href="">订单详情</a></p>
+					</td>
+					<td style="width: 150px" align="center">
+						<input type="button" value="评价"> 
+					</td>
+				</tr>
+			</colgroup>
+		</table>
+		</br>
+		<table cellspacing = "0">
+			<colgroup span="7">
+				<tr style="height: 40px; background: #F5F5F5;">
+					<td colspan="7" align="right">
+						订单号:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+						<a href="">
+							<img src="img/客服.png" style="width: 20px;height: 20px;">
+						</a>
+						和我联系&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+					</td>
+				</tr>
+				<tr style="height: 120px;">
+					<td style="width: 150px"></td>
+					<td style="width: 250px"></td>
+					<td style="width: 100px" align="center">
+						数量：1
+					</td>
+					<td style="width: 150px;" align="center" >
+						<p><a href="">申请售后</a></p>
+						<p><a href="">投诉卖家</a></p>
+					</td>
+					<td style="width: 150px" align="center">
+						<p><b>￥</b></p>
+						<p>(含运费：￥)</p>
+					</td>
+					<td style="width: 150px" align="center">
+						<p>交易成功</p>
+						<p><a href="">订单详情</a></p>
+					</td>
+					<td style="width: 150px" align="center">
+						<input type="button" value="评价"> 
+					</td>
+				</tr>
+			</colgroup>
+		</table>
+		</br>
+	</div>	
+    
+    
+  </div>
+</div>
+</div>
+<script src="js/wow.min.js"></script>
+<script>
+$(function(){
+
+new WOW().init();
+})
+</script>
+</body>
+</html>
