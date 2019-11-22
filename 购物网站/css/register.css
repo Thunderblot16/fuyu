@@ -55,9 +55,19 @@ header{
 .form-group{
 	float:left;
 	margin:60px;
-	padding-left:180px;
+    margin-top: 8%;
+    padding-left: 30%;
 }
 .help-block{
 	color:#FFA500;
 	font-size:17px;
+}
+.reg{
+    width: 200px;
+    margin-left: 14%;
+    margin-top: 2%;
+    font-size: 25px;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
 }
