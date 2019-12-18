@@ -11,6 +11,11 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <!--动画CSS插件-->
 <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+
+<script src="./js/wow.min.js"></script>
+<script src="./js/login.js"></script>
 <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -21,20 +26,18 @@
 <div class="container-fluid ">
 <div class="row ">
 <div class="form ">
-<form class="form-horizontal wow slideInDown ">
+<form class="form-horizontal wow slideInDown " id="login-form" methods="POST" role="form">
 	<h1 class="col-sm-offset-3">校园二手交易系统</h1>
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-3 control-label ">用户名：</label>
     <div class="col-sm-7">
-
-      <input type="text" class="form-control " id="inputEmail3" placeholder="username">
+      <input type="text" class="form-control " id="inputEmail3" required placeholder="username" name="username">
     </div>
   </div>
   <div class="form-group">
     <label for="inputPassword3" class="col-sm-3 control-label">密码:</label>
     <div class="col-sm-7">
-      
-      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+      <input type="password" class="form-control" id="inputPassword3" required placeholder="Password" name="password">
     </div>
   </div>
   <div class="form-group">
@@ -48,25 +51,21 @@
   </div>
   <div class="form-group">
     <div class="col-sm-offset-4 col-sm-5">
-    
       <input class="form-control btn btn-danger" id="submit_btn"
 											value="登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;陆"
-											type="submit">
+											type="button" onclick="login()">
     </div>
-  </div>
   </div>
 </form>
 </div>
+</div>
   </div>
-   <script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
 
-<script src="js/wow.min.js"></script>
-<script>
+<!-- <script>
 $(function(){
 
 new WOW().init();
 })
-</script>
+</script> -->
 </body>
 </html>
